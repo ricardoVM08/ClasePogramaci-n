@@ -1,0 +1,10 @@
+import calendar
+
+contador = 0
+
+for año in range(1901, 2001):
+    for mes in range(1, 13):
+        if calendar.weekday(año, mes, 1) == 6:
+            contador = contador + 1
+
+print(contador)
